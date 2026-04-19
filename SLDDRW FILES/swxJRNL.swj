@@ -1,0 +1,124 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 12/04/24 by HESHALA
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = Application.SldWorks
+
+swApp.ActivateDoc2 "OIL TANK LID - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ange\Documents\MY WORKING DESIGNS\OIL AND WATER TANK\DRAWINGS\OIL TANK LID.pdf", 0, 2)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OIL TANK LID - Sheet1"
+swApp.ActivateDoc2 "OIL_TANK DRAWING - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ange\Documents\MY WORKING DESIGNS\OIL AND WATER TANK\DRAWINGS\OIL_TANK DRAWING.pdf", 0, 2)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "OIL_TANK DRAWING - Sheet1"
+swApp.ActivateDoc2 "TANK FRAME DRAWING - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ange\Documents\MY WORKING DESIGNS\OIL AND WATER TANK\DRAWINGS\TANK FRAME DRAWING.pdf", 0, 2)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "TANK FRAME DRAWING - Sheet1"
+swApp.ActivateDoc2 "WATER TANK ASSEMBLY DRAWING - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ange\Documents\MY WORKING DESIGNS\OIL AND WATER TANK\DRAWINGS\WATER TANK ASSEMBLY DRAWING.pdf", 0, 2)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "WATER TANK ASSEMBLY DRAWING - Sheet1"
+swApp.ActivateDoc2 "WATER TANK LID DRAWING - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ange\Documents\MY WORKING DESIGNS\OIL AND WATER TANK\DRAWINGS\WATER TANK LID DRAWING.pdf", 0, 2)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "WATER TANK LID DRAWING - Sheet1"
+swApp.ActivateDoc2 "WATER_TANK_DRAWING - Sheet1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+
+' Save As
+longstatus = Part.SaveAs3("C:\Users\Ange\Documents\MY WORKING DESIGNS\OIL AND WATER TANK\DRAWINGS\WATER_TANK_DRAWING.pdf", 0, 2)
+
+' Close Document
+swDrawing = Nothing
+Set Part = Nothing
+swApp.CloseDoc "WATER_TANK_DRAWING - Sheet1"
+swApp.ExitApp
+End Sub
