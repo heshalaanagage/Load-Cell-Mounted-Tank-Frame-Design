@@ -54,8 +54,8 @@ Add CAD renders or assembly images here.
 Heshala Madhuwantha  
 Undergraduate | Mechatronics Engineering | University of Sri Jayewardenepura, Sri Lanka
 
-## 📬 Contact
+##  Contact
 Open for feedback and collaboration.
 
-## ⭐ Support
+##  Support
 If you found this useful, give it a star ⭐
